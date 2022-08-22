@@ -1,0 +1,115 @@
+@font-face {
+  src: url("fonts/Trade-Gothic-LT-Std-Extended.otf");
+  font-family: TG;
+}
+
+html {
+  height: 100%;
+  background-color: #28293e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: TG;
+}
+
+body {
+  min-height: 100%;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles & navBar*/
+.header {
+  height: 30vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 5% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #b2ba9d;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* Main title, subtitle & text Styles */
+.text-box {
+  padding: 5% 6%;
+  color: #737b82;
+  top: 30vh;
+  margin: auto;
+  text-align: center;
+}
+.text-box h1 {
+  color: #b2ba9d;
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 10px;
+  font-size: 14px;
+  color: #737b82;
+}
+.subtitle {
+  color: #e5ad9c !important;
+}
+.home-text {
+  margin-top: 40px !important;
+  text-align: left !important;
+}
+/* Coloring button Styles */
+.hero-btn {
+  margin-top: 20px;
+  height: 20px;
+  line-height: 24px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #737b82;
+  border: 1px solid #737b82;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.hero-btn:hover {
+  border: 1px solid #b2ba9d;
+  background: #b2ba9d;
+  transition: 1s;
+}
