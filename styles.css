@@ -13,6 +13,7 @@ body {
   min-height: 100%;
   max-width: 100%;
 }
+
 .container {
   max-width: 80%;
   margin: auto;
@@ -35,7 +36,7 @@ nav {
   align-items: center;
 }
 .contact {
-  margin-left: 100px;
+  margin-left: 15%;
   border: 1px solid rgb(188, 186, 186, 0.5);
   border-radius: 5px;
   transition: 0.5s;
@@ -75,6 +76,7 @@ a {
 /* Main text styles */
 .mainText h5 {
   font-size: 18px;
+  letter-spacing: 3px;
   color: #ef6d58;
 }
 .mainText h2 {
@@ -87,9 +89,17 @@ a {
   font-size: 16px;
   color: rgb(188, 186, 186);
 }
-.star {
+.hide {
+  display: block;
   position: absolute;
-  left: 30%;
+  margin-left: 10px;
+  z-index: -1;
+}
+.star {
+  display: block;
+  position: absolute;
+  margin-left: 200px;
+  transition: all 2s linear;
   z-index: -1;
 }
 .home {
@@ -170,17 +180,22 @@ a {
   text-align: center;
   padding: 30px 0;
 }
-.footer img {
-  max-width: 100vh;
+.icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: 10%;
   margin-right: 10%;
+}
+.icons img {
+  width: 10%;
 }
 
 /* Styles for responsive site */
 nav .fa {
   display: none;
 }
-/* Media query for mobile phones */
+/* Media query for small screen devices */
 @media (max-width: 800px) {
   /* Header */
   .header {
@@ -204,8 +219,22 @@ nav .fa {
   .imgContainer img {
     max-width: 100%;
   }
+  .hide {
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+    z-index: -1;
+  }
   .star {
-    left: 55%;
+    display: block;
+    position: absolute;
+    margin-left: 175px;
+    transition: all 2s linear;
+    z-index: -1;
+  }
+  /* Footer */
+  .icons img {
+    width: 15%;
   }
 
   /* Hidding navBar */

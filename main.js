@@ -13,3 +13,12 @@ showMenu.addEventListener("click", () => {
   console.log("showing");
   navLinks.style.right = "0";
 });
+
+// JS for easy Star animation
+
+setTimeout(function () {
+  const star = document.getElementById("star");
+  // star.style.display = "block";
+  star.classList.remove("hide");
+  star.classList.add("star");
+}, 200);
