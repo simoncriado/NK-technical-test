@@ -36,7 +36,7 @@ nav {
   align-items: center;
 }
 .contact {
-  margin-left: 15%;
+  margin-left: 75px;
   border: 1px solid rgb(188, 186, 186, 0.5);
   border-radius: 5px;
   transition: 0.5s;
@@ -54,6 +54,11 @@ nav {
   display: inline-block;
   padding: 8px 22px;
   position: relative;
+}
+.nav-links ul {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 75px;
 }
 a {
   color: white;
@@ -76,7 +81,7 @@ a {
 /* Main text styles */
 .mainText h5 {
   font-size: 18px;
-  letter-spacing: 3px;
+  letter-spacing: 0.1875em;
   color: #ef6d58;
 }
 .mainText h2 {
@@ -188,7 +193,7 @@ a {
   margin-right: 10%;
 }
 .icons img {
-  width: 10%;
+  align-self: center;
 }
 
 /* Styles for responsive site */
